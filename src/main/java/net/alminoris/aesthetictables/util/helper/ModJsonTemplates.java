@@ -1030,7 +1030,7 @@ public class ModJsonTemplates
               },
               "result": {
                 "count": COUNT,
-                "id": "aesthetictables:OUTPUT_NAME"
+                "item": "aesthetictables:OUTPUT_NAME"
               }
             }
             """;

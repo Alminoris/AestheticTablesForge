@@ -28,7 +28,7 @@ public class ModBlocks
         for(String name : BlockSetsHelper.getWoods())
         {
             put(name, registerBlock("table_"+name,
-                    () -> new Table(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion())));
+                    () -> new Table(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion())));
         }
     }};
 
@@ -37,7 +37,7 @@ public class ModBlocks
         for(String name : BlockSetsHelper.getWoods())
         {
             put(name, registerBlock("coffee_table_"+name,
-                    () -> new CoffeeTable(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS).noOcclusion())));
+                    () -> new CoffeeTable(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion())));
         }
     }};
 
@@ -45,7 +45,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.getWoods())
         {
-            put(name, registerBlock("garden_table_"+name, () -> new GardenTable(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))));
+            put(name, registerBlock("garden_table_"+name, () -> new GardenTable(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))));
         }
     }};
 
@@ -53,7 +53,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.getWoods())
         {
-            put(name, registerBlock("desk_table_"+name, () -> new GardenTable(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))));
+            put(name, registerBlock("desk_table_"+name, () -> new GardenTable(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))));
         }
     }};
 
@@ -61,7 +61,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.getWoods())
         {
-            put(name, registerBlock("octagonal_table_"+name, () -> new SingleTable(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))));
+            put(name, registerBlock("octagonal_table_"+name, () -> new SingleTable(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))));
         }
     }};
 
@@ -69,7 +69,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.getWoods())
         {
-            put(name, registerBlock("dining_table_"+name, () -> new ExtraTable(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))));
+            put(name, registerBlock("dining_table_"+name, () -> new ExtraTable(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))));
         }
     }};
 
@@ -77,7 +77,7 @@ public class ModBlocks
     {{
         for(String name : BlockSetsHelper.getWoods())
         {
-            put(name, registerBlock("kitchen_table_"+name, () -> new Table(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS))));
+            put(name, registerBlock("kitchen_table_"+name, () -> new Table(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))));
         }
     }};
 

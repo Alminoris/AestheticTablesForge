@@ -115,7 +115,7 @@ public class GardenTable extends YAxisRotatedBlock
     }
 
     @Override
-    protected BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
+    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
     {
         if (state.getValue(WATERLOGGED))
         {
@@ -131,7 +131,7 @@ public class GardenTable extends YAxisRotatedBlock
     }
 
     @Override
-    protected void onPlace(BlockState state, Level world, BlockPos pos, BlockState oldState, boolean notify)
+    public void onPlace(BlockState state, Level world, BlockPos pos, BlockState oldState, boolean notify)
     {
         super.onPlace(state, world, pos, oldState, notify);
         updateSurroundingGardenTablees(world, pos);

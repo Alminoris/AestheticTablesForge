@@ -37,7 +37,7 @@ public class YAxisRotatedBlock extends Block implements SimpleWaterloggedBlock
     }
 
     @Override
-    protected BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
+    public BlockState updateShape(BlockState state, Direction direction, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
     {
         if (state.getValue(WATERLOGGED))
         {
@@ -49,7 +49,7 @@ public class YAxisRotatedBlock extends Block implements SimpleWaterloggedBlock
 
 
     @Override
-    protected FluidState getFluidState(BlockState state)
+    public FluidState getFluidState(BlockState state)
     {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
     }

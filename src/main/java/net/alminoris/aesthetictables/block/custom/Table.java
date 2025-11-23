@@ -65,7 +65,7 @@ public class Table extends Block implements SimpleWaterloggedBlock
     }
 
     @Override
-    protected BlockState updateShape(BlockState state, Direction dir, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
+    public BlockState updateShape(BlockState state, Direction dir, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
     {
         if (state.getValue(WATERLOGGED)) {
             world.scheduleTick(pos, net.minecraft.world.level.material.Fluids.WATER, net.minecraft.world.level.material.Fluids.WATER.getTickDelay(world));
@@ -106,7 +106,7 @@ public class Table extends Block implements SimpleWaterloggedBlock
     }
 
     @Override
-    protected net.minecraft.world.phys.shapes.VoxelShape getShape(BlockState state, BlockGetter view, BlockPos pos, CollisionContext ctx)
+    public VoxelShape getShape(BlockState state, BlockGetter view, BlockPos pos, CollisionContext ctx)
     {
         net.minecraft.world.phys.shapes.VoxelShape shape = TOP;
         if (state.getValue(LEG1)) shape = Shapes.or(shape, LEG_1);

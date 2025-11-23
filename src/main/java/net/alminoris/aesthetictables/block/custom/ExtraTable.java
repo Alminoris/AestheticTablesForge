@@ -72,7 +72,7 @@ public class ExtraTable extends Block implements SimpleWaterloggedBlock
     }
 
     @Override
-    protected BlockState updateShape(BlockState state, Direction dir, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
+    public BlockState updateShape(BlockState state, Direction dir, BlockState neighborState, LevelAccessor world, BlockPos pos, BlockPos neighborPos)
     {
         if (state.getValue(WATERLOGGED))
         {
@@ -118,7 +118,7 @@ public class ExtraTable extends Block implements SimpleWaterloggedBlock
     }
 
     @Override
-    protected VoxelShape getShape(BlockState state, BlockGetter view, BlockPos pos, CollisionContext ctx)
+    public VoxelShape getShape(BlockState state, BlockGetter view, BlockPos pos, CollisionContext ctx)
     {
         VoxelShape shape = TOP;
         if (state.getValue(LEG1)) shape = Shapes.or(shape, LEG_1);
