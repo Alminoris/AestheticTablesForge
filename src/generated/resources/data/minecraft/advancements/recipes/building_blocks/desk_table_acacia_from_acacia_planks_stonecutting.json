@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:desk_table_acacia_from_acacia_planks_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

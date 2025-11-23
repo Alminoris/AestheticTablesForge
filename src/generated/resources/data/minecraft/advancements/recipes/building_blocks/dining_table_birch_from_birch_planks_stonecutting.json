@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:dining_table_birch_from_birch_planks_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

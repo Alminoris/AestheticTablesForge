@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:octagonal_table_crimson_from_crimson_planks_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:dining_table_dark_oak_from_dark_oak_planks_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }

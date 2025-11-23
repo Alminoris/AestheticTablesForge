@@ -30,6 +30,5 @@
     "recipes": [
       "minecraft:octagonal_table_warped_from_warped_planks_stonecutting"
     ]
-  },
-  "sends_telemetry_event": false
+  }
 }
