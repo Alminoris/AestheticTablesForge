@@ -4,6 +4,9 @@ import com.mojang.logging.LogUtils;
 import net.alminoris.aesthetictables.block.ModBlocks;
 import net.alminoris.aesthetictables.item.ModItemGroups;
 import net.alminoris.aesthetictables.item.ModItems;
+import net.alminoris.aesthetictables.util.helper.BlockSetsHelper;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -62,7 +65,10 @@ public class AestheticTables
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            for (String name : BlockSetsHelper.getWoods())
+            {
+                ItemBlockRenderTypes.setRenderLayer(ModBlocks.COFFEE_TABLES.get(name).get(), RenderType.translucent());
+            }
         }
     }
 }
