@@ -2,6 +2,7 @@ package net.alminoris.aesthetictables;
 
 import com.mojang.logging.LogUtils;
 import net.alminoris.aesthetictables.block.ModBlocks;
+import net.alminoris.aesthetictables.item.ModItemGroups;
 import net.alminoris.aesthetictables.item.ModItems;
 import net.alminoris.aesthetictables.util.helper.BlockSetsHelper;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
@@ -30,6 +31,7 @@ public class AestheticTables
 
         modEventBus.addListener(this::commonSetup);
 
+        ModItemGroups.registerModItemGroups();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
