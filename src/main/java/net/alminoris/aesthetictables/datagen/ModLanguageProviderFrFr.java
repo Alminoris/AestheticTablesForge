@@ -1,7 +1,7 @@
 package net.alminoris.aesthetictables.datagen;
 
 import net.alminoris.aesthetictables.AestheticTables;
-import net.minecraft.data.PackOutput;
+import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
 import java.util.LinkedHashMap;
@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class ModLanguageProviderFrFr extends LanguageProvider
 {
-    public ModLanguageProviderFrFr(PackOutput output)
+    public ModLanguageProviderFrFr(DataGenerator output)
     {
         super(output, AestheticTables.MOD_ID, "fr_fr");
     }

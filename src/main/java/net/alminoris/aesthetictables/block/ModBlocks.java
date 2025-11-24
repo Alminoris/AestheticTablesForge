@@ -2,6 +2,7 @@ package net.alminoris.aesthetictables.block;
 
 import net.alminoris.aesthetictables.AestheticTables;
 import net.alminoris.aesthetictables.block.custom.*;
+import net.alminoris.aesthetictables.item.ModItemGroups;
 import net.alminoris.aesthetictables.item.ModItems;
 import net.alminoris.aesthetictables.util.helper.BlockSetsHelper;
 import net.minecraft.world.item.BlockItem;
@@ -90,7 +91,7 @@ public class ModBlocks
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block)
     {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().tab(ModItemGroups.ATBLS_TAB)));
     }
 
     public static void register(IEventBus eventBus)

@@ -5,7 +5,7 @@ import net.alminoris.aesthetictables.block.ModBlocks;
 import net.alminoris.aesthetictables.util.helper.BlockSetsHelper;
 import net.alminoris.aesthetictables.util.helper.ModJsonHelper;
 import net.alminoris.aesthetictables.util.helper.ModJsonTemplates;
-import net.minecraft.data.PackOutput;
+import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -20,7 +20,7 @@ import java.util.Hashtable;
 
 public class ModBlockStateProvider extends BlockStateProvider
 {
-    public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper)
+    public ModBlockStateProvider(DataGenerator output, ExistingFileHelper exFileHelper)
     {
         super(output, AestheticTables.MOD_ID, exFileHelper);
     }
