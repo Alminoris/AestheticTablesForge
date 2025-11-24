@@ -3,6 +3,7 @@ package net.alminoris.aesthetictables.item;
 import net.alminoris.aesthetictables.AestheticTables;
 import net.alminoris.aesthetictables.block.ModBlocks;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.fml.ModList;
@@ -37,7 +38,7 @@ public class ModItemGroups
 
         @Override
         public Component getDisplayName() {
-            return Component.translatable("itemGroup." + AestheticTables.MOD_ID + ".atblstab");
+            return new TranslatableComponent("itemGroup." + AestheticTables.MOD_ID + ".atblstab");
         }
     };
 
