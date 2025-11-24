@@ -127,6 +127,6 @@ public class ModLanguageProviderDeDe extends LanguageProvider
             }
         }
 
-        add("itemgroup.atblstab", "Aesthetic Tables");
+        add("itemGroup.aesthetictables.atblstab", "Aesthetic Tables");
     }
 }

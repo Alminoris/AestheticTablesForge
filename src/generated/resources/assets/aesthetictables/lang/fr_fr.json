@@ -468,5 +468,5 @@
   "block.aesthetictables.table_willow_nss": "Table en saule",
   "block.aesthetictables.table_wisteria_nss": "Table en glycine",
   "block.aesthetictables.table_yew": "Table en if",
-  "itemgroup.atblstab": "Aesthetic Tables"
+  "itemGroup.aesthetictables.atblstab": "Aesthetic Tables"
 }

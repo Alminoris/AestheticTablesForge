@@ -468,5 +468,5 @@
   "block.aesthetictables.table_willow_nss": "Tisch aus Weide",
   "block.aesthetictables.table_wisteria_nss": "Tisch aus Glyzinie",
   "block.aesthetictables.table_yew": "Tisch aus Eibe",
-  "itemgroup.atblstab": "Aesthetic Tables"
+  "itemGroup.aesthetictables.atblstab": "Aesthetic Tables"
 }

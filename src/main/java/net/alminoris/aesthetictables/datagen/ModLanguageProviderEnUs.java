@@ -41,7 +41,7 @@ public class ModLanguageProviderEnUs extends LanguageProvider
             add("block." + AestheticTables.MOD_ID + "." + path, displayName);
         }
 
-        add("itemgroup.atblstab", "Aesthetic Tables");
+        add("itemGroup.aesthetictables.atblstab", "Aesthetic Tables");
     }
 
     public static String movePrefix(String input, String[] arr)

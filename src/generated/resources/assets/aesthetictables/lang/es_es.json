@@ -468,5 +468,5 @@
   "block.aesthetictables.table_willow_nss": "Mesa de sauce",
   "block.aesthetictables.table_wisteria_nss": "Mesa de glicinia",
   "block.aesthetictables.table_yew": "Mesa de tejo",
-  "itemgroup.atblstab": "Aesthetic Tables"
+  "itemGroup.aesthetictables.atblstab": "Aesthetic Tables"
 }

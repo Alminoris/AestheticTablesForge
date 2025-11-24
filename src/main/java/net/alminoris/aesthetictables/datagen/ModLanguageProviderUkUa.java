@@ -126,6 +126,6 @@ public class ModLanguageProviderUkUa extends LanguageProvider
             }
         }
 
-        add("itemgroup.atblstab", "Aesthetic Tables");
+        add("itemGroup.aesthetictables.atblstab", "Aesthetic Tables");
     }
 }

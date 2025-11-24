@@ -468,5 +468,5 @@
   "block.aesthetictables.table_willow_nss": "Стол из ивы",
   "block.aesthetictables.table_wisteria_nss": "Стол из глицинии",
   "block.aesthetictables.table_yew": "Стол из тиса",
-  "itemgroup.atblstab": "Aesthetic Tables"
+  "itemGroup.aesthetictables.atblstab": "Aesthetic Tables"
 }
